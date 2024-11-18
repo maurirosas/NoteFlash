@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos_Admin.Fragment_admin_docentes">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/Fragments_Docente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loginButton">
+
+        <!-- ScrollView para la lista de docentes -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <!-- ListView para la lista de docentes registrados -->
+            <ListView
+                android:id="@+id/listViewDocentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+        </ScrollView>
+    </FrameLayout>
+
+    <!-- Botón para registrar un nuevo proyecto, fijo al fondo -->
+    <LinearLayout
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/nuevoDButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="Nuevo Docente"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/eliminarDButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

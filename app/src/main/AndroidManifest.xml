@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_incos"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_incos_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoteFlash"
+        tools:targetApi="31">
+        <activity
+            android:name=".Proyecto"
+            android:exported="false" />
+        <activity
+            android:name=".Docentes_Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".Registro_Docentes"
+            android:exported="false" />
+        <activity
+            android:name=".Registro_Estudiantes"
+            android:exported="false" />
+        <activity
+            android:name=".Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".Registro_Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".Proyectos_Calificados"
+            android:exported="false" />
+        <activity
+            android:name=".Estudiante"
+            android:exported="false" />
+        <activity
+            android:name=".Proyectos_Asignados"
+            android:exported="false" />
+        <activity
+            android:name=".Docente"
+            android:exported="false"
+            android:theme="@style/Theme.NoteFlash" />
+        <activity
+            android:name=".Lista_Proyectos"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bienvenida"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Elegir_rol" />
+        <activity android:name=".Inicio_sesion" />
+    </application>
+
+</manifest>

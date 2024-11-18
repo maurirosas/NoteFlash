@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos_Docente.Fragment_docente_proy_asig">
+
+    <FrameLayout
+        android:id="@+id/Fragments_Proyecto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ListView para la lista de proyectos calificados -->
+        <ListView
+            android:id="@+id/ProyectosAsignados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </FrameLayout>
+</RelativeLayout>

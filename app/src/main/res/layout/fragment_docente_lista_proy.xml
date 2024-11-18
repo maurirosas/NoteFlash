@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos_Docente.Fragment_docente_lista_proy">
+
+    <!-- Texto de encabezado para el filtro -->
+    <TextView
+        android:id="@+id/textoFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por carrera:"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp" />
+
+    <!-- Spinner para seleccionar la carrera -->
+    <Spinner
+        android:id="@+id/spinnerCarreras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textoFiltrar"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp" />
+
+    <FrameLayout
+        android:id="@+id/Fragments_Proyecto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textoFiltrar"
+        android:layout_marginTop="16dp">
+
+        <!-- ListView para la lista de proyectos calificados -->
+        <ListView
+            android:id="@+id/ProyectosAsignados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </FrameLayout>
+</RelativeLayout>

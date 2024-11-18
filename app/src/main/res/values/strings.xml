@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">NoteFlash</string>
+    <string name="Txt_rol">Por Favor elija su Rol</string>
+    <string name="Role">Rol</string>
+    <string name="Btn_rol_administrador">Administrador</string>
+    <string name="Btn_rol_docente">Docente</string>
+    <string name="Btn_rol_estudiante">Estudiante</string>
+
+    <string name="User">Usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="Required">Obligatorio</string>
+
+    <string name="Menu_docente">Docentes</string>
+    <string name="Menu_proyecto">Proyectos</string>
+    <string name="Titulo_RL_Admin">Titulo</string>
+
+
+    <string name="Titulo_RL_Proyecto">Titulo</string>
+
+    <string name="Menu_proyectos">Proyectos</string>
+    <string name="Menu_proyectos_asignados">Proyectos Asignados</string>
+    <string name="Titulo_RL_Docente">Titulo</string>
+
+    <string name="Menu_proyectos_calificados">Proyectos Calificados</string>
+    <string name="Titulo_RL_Estudiante">Proyectos Calificados</string>
+
+    <string name="Names">Nombres</string>
+    <string name="Surnames">Apellidos</string>
+    <string name="Ci">CI</string>
+
+    <string name="Project_Name">Nombre Proyecto</string>
+    <string name="Member">Integrante</string>
+    <string name="Career">Carrera</string>
+    <string name="Jury1">Jurado 1</string>
+    <string name="Jury2">Jurado 2</string>
+    <string name="Jury3">Jurado 3</string>
+    <string name="Project_Summary">Resumen Proyecto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+</resources>

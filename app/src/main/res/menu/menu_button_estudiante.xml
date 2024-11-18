@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Menu_lista_proyectos_est"
+        android:title="Todos los proyectos"
+        android:icon="@drawable/ic_proy_regist"
+        />
+    <item
+        android:id="@+id/Menu_logout_est"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/logout"
+        />
+
+</menu>

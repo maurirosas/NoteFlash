@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Proyectos_Calificados">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles del Proyecto"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proyecto:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/etProject_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estudiante:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/etMember"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carrera:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/etCareer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resumen del Proyecto:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/etProject_Summary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Criterios de Evaluación"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Criterio 1: Vinculación a los Sectores Socioeconómicos y Productivos (25%)"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Criterio 2: Novedad e Innovación del Proyecto (25%)"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Criterio 3: Factibilidad Económica y Técnica del Proyecto (15%)"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Criterio 4: Utilidad Práctica y Sostenibilidad del Proyecto (20%)"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Criterio 5: Exposición y Presentación del Proyecto (15%)"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calificaciones"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4">
+
+                <!-- Cabecera con nombres de jurados y columna para Nota Final -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterios"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jurado 1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jurado 2"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jurado 3"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Notas"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Fila para el Criterio 1 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterio - 1 (25%)"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio1_jurado1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio1_jurado2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio1_jurado3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/nota_final_criterio1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- Fila para el Criterio 2 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterio - 2 (25%)"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio2_jurado1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio2_jurado2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio2_jurado3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/nota_final_criterio2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- Fila para el Criterio 3 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterio - 3 (15%)"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio3_jurado1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio3_jurado2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio3_jurado3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/nota_final_criterio3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- Fila para el Criterio 4 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterio - 4 (20%)"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio4_jurado1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio4_jurado2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio4_jurado3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/nota_final_criterio4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- Fila para el Criterio 5 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Criterio - 5 (15%)"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio5_jurado1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio5_jurado2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/criterio5_jurado3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/nota_final_criterio5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- Fila para la Sumatoria -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Calificacion Final"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/calificacionFinal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="0.0" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Menu_docente"
+        android:title="@string/Menu_docente"
+        android:icon="@drawable/ic_docentes"
+        />
+    <item
+        android:id="@+id/Menu_proyecto"
+        android:title="@string/Menu_proyecto"
+        android:icon="@drawable/ic_proyectos"
+        />
+    <item
+        android:id="@+id/Menu_lista_proyectos_adm"
+        android:title="Todos los proyectos"
+        android:icon="@drawable/ic_proy_regist"
+        />
+    <item
+        android:id="@+id/Menu_logout_admin"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/logout"
+        />
+</menu>

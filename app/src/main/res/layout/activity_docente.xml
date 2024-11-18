@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Docente">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRLDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/Titulo_RL_Docente"
+            android:text="@string/Titulo_RL_Docente"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/Fragments_Docente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRLDocente"
+        android:layout_above="@+id/View1"/>
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_above="@+id/Bottom_Nv_Docente"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Bottom_Nv_Docente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_button_docente"
+        app:labelVisibilityMode="labeled"/>
+</RelativeLayout>
